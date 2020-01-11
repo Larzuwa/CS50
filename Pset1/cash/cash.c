@@ -12,25 +12,25 @@ int main(void)
 #define DIME 10;
 #define NICKEL 5;
 
+    float input;
+    int pennies;
+    int quarters;
+    int dimes;
+    int nickels;
+    int leftover;
+    int total_coins;
 
-float input;
-int pennies;
-int quarters;
-int dimes;
-int nickels;
-int leftover;
-int total_coins;
 
+    do
+    {
+        printf("How much chang is owed?\n");
+        input = get_float();
 
-do {
-    printf("How much chang is owed?\n");
-    input = get_float();
-
-} while (input <=0);
-
+    }
+    while (input <= 0);
 
     // Given amount is converted to pennies
-    pennies = (int)round(input*100);
+    pennies = (int)round(input * 100);
 
     // Quarters
     quarters = pennies / QUARTER;
