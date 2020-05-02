@@ -1,16 +1,18 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int main(int key)
+int main(int argc, string argv[])
 {
-  if (key < 10)
-  {//Error
-    return 1;
-  }
-  else
-  {
-    printf("Success!\n", );
-    return 0;
-  }
+
+    if (argc == 2)
+    {
+        printf("Succes! %s\n", argv[1]);
+        return 0;
+    }
+    else
+    {
+        printf("Usage: ./caesar key \n");
+        return 1;
+    }
 
 }
