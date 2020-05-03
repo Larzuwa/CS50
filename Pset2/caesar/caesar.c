@@ -39,6 +39,9 @@ int main(int argc, string argv[])
         keynumeric = atoi(key);
         printf("Success\n");
         printf("%i\n", keynumeric);
+
+        // Prompt the user for the sting to be ciphered
+        plaintext = get_string("Plaintext: ");
     }
 
     // If the program does not meet the requirements (no arguments or more than 2)
