@@ -42,6 +42,17 @@ int main(int argc, string argv[])
 
         // Prompt the user for the sting to be ciphered
         plaintext = get_string("Plaintext: ");
+
+        printf("Cipher Text: ");
+
+        // Iterate over the provided string to add +1 value
+        for (int i = 0, n = strlen(plaintext); i < n; i++)
+        {
+            char c = plaintext[i];
+            printf("%c", c+1);
+            //ciphertext = c;
+        }
+        printf("\n");
     }
 
     // If the program does not meet the requirements (no arguments or more than 2)
